@@ -1,0 +1,1 @@
+#ifndef WPRINTF_H#define wPRINTF_H#include <varargs.h>int wprintf(void *va_alist,...) ;char wputchar(char c);void printhex(int n);void printdec(int n);void wflush(void);void wdiscard(void);#endif WPRINTF_H

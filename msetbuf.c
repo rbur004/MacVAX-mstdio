@@ -1,0 +1,1 @@
+#include	"mstdio.h"voidmsetbuf(	/*0001*/	M_FILE *iop,	char *buf){	msetvbuf(iop,buf,(buf == NULL) ? _MIONBF : _MIOFBF ,MBUFSIZ);}

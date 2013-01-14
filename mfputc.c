@@ -1,0 +1,1 @@
+#include "mstdio.h"longmfputc(	long c,	M_FILE *fp){	return(mputc(c, fp));}

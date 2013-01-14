@@ -1,0 +1,1 @@
+#include	"mstdio.h"#ifdef clearerr#undef clearerr#endifvoid mclearerr(	register struct _miobuf *iop){	iop->_flag &= ~(_MIOERR|_MIOEOF);}

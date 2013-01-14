@@ -1,0 +1,1 @@
+#include "mstdio.h"longmungetc(	long c,	register M_FILE *iop){	if (c == EOF)		return (-1);	if ((iop->_flag&_MIOREAD) == 0 || iop->_ptr <= iop->_base)		if (iop->_ptr == iop->_base && iop->_cnt == 0)			*iop->_ptr++;		else			return (EOF);	iop->_cnt++;	*--iop->_ptr = c;	return (c);}

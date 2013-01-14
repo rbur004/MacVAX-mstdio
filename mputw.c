@@ -1,0 +1,1 @@
+#include "mstdio.h"longmputw(	long w,	register M_FILE *iop){	register char *p;	register i;	p = (char *)&w;	for (i=sizeof(int); --i>=0;)		mputc(*p++, iop);	return(mferror(iop));}

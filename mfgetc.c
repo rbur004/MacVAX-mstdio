@@ -1,0 +1,1 @@
+#include "mstdio.h"longmfgetc(	M_FILE *fp){	return(mgetc(fp));}

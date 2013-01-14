@@ -1,0 +1,1 @@
+#include "mstdio.h"void mexit(	long code){	_mcleanup();	_exit(code);}

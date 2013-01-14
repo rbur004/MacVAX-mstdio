@@ -1,0 +1,1 @@
+#include	"mstdio.h"#include 	"macio.h"void mrewind(	/*0001*/	register struct _miobuf *iop){	(void)mfflush(iop);					/*0001*/	(void)mlseek(mfileno(iop), 0L, 0);			/*0001*/	iop->_cnt = 0;	iop->_ptr = iop->_base;	iop->_flag &= ~(_MIOERR|_MIOEOF);	if (iop->_flag & _MIORW)		iop->_flag &= ~(_MIOREAD|_MIOWRT);}
