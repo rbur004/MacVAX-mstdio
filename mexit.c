@@ -1,1 +1,1 @@
-#include "mstdio.h"#include <stdlib.h>void mexit(	long code){	_mcleanup();	_exit(code);}
+#include "mstdio.h"#include <stdlib.h>void _exit(long code); //Not defined in stdlib, but there.void mexit(	long code){	_mcleanup();	_exit(code);}
