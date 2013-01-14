@@ -1,0 +1,1 @@
+#ifndef APRINTF_H#define APRINTF_H#ifdef APRINTF_C#define BugAlert	301#endif#include <varargs.h>int aprintf(void *va_alist,...) ;#endif APRINTF_H
